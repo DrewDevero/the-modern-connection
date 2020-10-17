@@ -1,3 +1,258 @@
 ---
 ---
-@import "../../../_styles/aHPB.css";
+@import "
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    height: 100vh;
+    background: rgba(128, 128, 128, 0.3);
+    position: relative;
+}
+.mainHeading {
+    position: absolute;
+    left: 4%;
+    top: 3%;
+    cursor: pointer;
+}
+.mainHeading2 {
+    position: absolute;
+    left: 6%;
+    top: 7.5%;
+    cursor: pointer;
+}
+@media screen and (max-width: 59rem) {
+    .mainHeading, .mainHeading2 {
+        display: block;
+        position: inherit;
+        margin-left: 1rem;
+    }
+}
+#h2_1 {
+    display: inline-block; 
+    margin: 10rem 2rem 1rem;
+}
+#h2_2 {
+    display: inline-block; 
+    margin: 0rem 3rem 1rem;
+}
+@media screen and (max-width: 50rem) {
+    #h2_1 {
+        display: block;
+        margin: 1rem 2rem 0rem;
+    }
+}
+@media screen and (max-width: 50rem) {
+    #h2_2 {
+        display: block;
+    }
+}
+#mainPara {
+    margin: 0.5rem 2rem 1rem;
+}
+#mainPara2 {
+    margin: 0.5rem 1rem 1rem 2.75rem;
+}
+@media screen and (max-width: 50rem) {
+    #mainPara {
+        display: block;
+    }
+}
+.navBtnSpacing {
+    padding-top: 1rem;
+}
+.navBtns {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-weight: bold;
+    outline-color: rgba(119, 136, 153, 0.05);
+    border-color: rgba(119, 136, 153, 0.05);
+    border-radius: 18%;
+    width: 6rem;
+    height: 3rem;
+    /* background: rgba(128, 128, 128, 0.5); */
+    background: transparent;
+    cursor: pointer;
+}
+#logIn {
+    font-weight: bold;
+    background: transparent;
+    border: transparent;
+    outline: transparent;
+    position: absolute;
+    left: 80%;
+    top: 5.5%;
+    cursor: pointer;
+}
+#signUp {
+    font-weight: bold;
+    position: absolute;
+    left: 85%;
+    top: 3%;
+    cursor: pointer;
+    padding: 0.7rem 1.5rem 0.7rem;
+    font-size: 1rem;
+}
+@media screen and (max-width: 50rem) {
+    #logIn {
+        display: block;
+        position: inherit;
+        margin: 0.5rem 1rem 1rem;
+    }
+}
+@media screen and (max-width: 50rem) {
+    #signUp {
+        display: block;
+        position: inherit;
+        margin: 0rem 1rem 0rem;
+    }
+}
+.mainImg {
+    height: 40rem;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+@media screen and (max-width: 60rem) {
+    .mainImg {
+        top: 30%;
+    }
+}
+@media screen and (max-width: 55.5rem) {
+    .mainImg {
+        position: inherit;
+        display: block;
+        margin: auto;
+    }
+}
+#article1 {
+    background: lightgrey;
+    text-align: center;
+    position: relative;
+    height: 50rem;
+    z-index: -1;
+}
+#article2 {
+    background: lightblue;
+    text-align: center;
+    height: 40rem;
+}
+#phaseInText {
+    top: 45%;
+    right: 28%;
+    padding: 1rem;
+    border: 0.25rem solid rgba(0,0,0,0.25);
+    color: black;
+    opacity: 0;
+    font-size: 2rem;
+    position: absolute;
+    transition: opacity 2s ease-in-out;
+}
+@media screen and (max-width: 55.5rem) {
+    #article1 {
+        height: 60rem;
+    }
+}
+@media screen and (max-width: 55.5rem) {
+    #phaseInText {
+        top: 65%;
+        right: 10%;
+        left: 10%;
+    }
+}
+#colorClickAlign {
+    text-align: center;
+}
+#colorClick1 {
+    content: "";
+    background: brown no-repeat fixed;
+    opacity: 0;
+    z-index: 1;
+    margin: auto 3rem auto;
+    padding: 10rem;
+    transition: opacity 1s ease-in-out;
+}
+#colorClick2 {
+    content: "";
+    background: grey no-repeat fixed;
+    opacity: 0;
+    z-index: 1;
+    margin: auto 3rem auto;
+    padding: 10rem;
+    transition: opacity 1s ease-in-out;
+}
+#colorClick3 {
+    content: "";
+    background: green no-repeat fixed;
+    opacity: 0;
+    z-index: 1;
+    margin: auto 3rem auto;
+    padding: 10rem;
+    transition: opacity 1s ease-in-out;
+}
+#colorClickTextAlign {
+    text-align: center;
+    margin-top: 7rem;
+}
+#colorClickText1 {
+    font-size: 5rem; 
+    text-transform: capitalize;
+    margin: auto 8rem auto 8rem;    
+}
+#colorClickText2 {
+    font-size: 5rem;
+    text-transform: capitalize;
+    margin: auto 5rem auto 10rem;
+}
+#colorClickText3 {
+    font-size: 5rem; 
+    text-transform: capitalize;
+    margin: auto 3rem auto 7rem;    
+}
+@media screen and (max-width: 78rem) {
+    #colorClick3 {
+        display: block;
+        height: 10rem;
+        width: 10rem;
+        margin: 12rem auto 0rem;
+    }
+}
+@media screen and (max-width: 55rem) {
+    #colorClick3 {
+        margin: 2rem auto 0rem;
+    }
+}
+@media screen and (max-width: 55rem) {
+    #colorClick2 {
+        display: block;
+        height: 10rem;
+        width: 10rem;
+        margin: 12rem auto 0rem;
+    }
+}
+@media screen and (max-width: 33rem) {
+    #colorClick1 {
+        margin: -10rem auto 0rem;
+    }
+}
+
+/* @media screen and (max-width: 60rem) {
+        #colorClickTextAlign {
+            
+        }
+} */
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+";
