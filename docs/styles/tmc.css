@@ -8,6 +8,16 @@ header {
     background: rgba(128, 128, 128, 0.3);
     position: relative;
 }
+.copyright-spacing {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+.copyright {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0.5rem;
+}
 .mainHeading {
     position: absolute;
     left: 4%;
